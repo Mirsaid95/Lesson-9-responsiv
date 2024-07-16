@@ -1,0 +1,132 @@
+.header.toggle {
+    .header__lists{
+        top: 50%;
+        left: -100%;
+        width: 50%;
+
+    }
+}
+
+.header{
+    width: 100%;
+    position: relative;
+    &__nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            width: 80%;
+        }
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__lists{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        gap: 20px;
+        width: 100%;
+        height: 40vh;
+        background-color: #979797e7;
+        left: 0;
+        top: 100%;
+        z-index: 1;  
+        transition: 1.5s;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+
+    &__link{
+        color: rgb(50, 82, 35);
+        font-weight: 700;
+    }
+
+    &__btn{
+        display: none;
+    }
+
+    &__togl{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #979797;
+    }
+    
+
+}
+
+@media(min-width:768px){
+
+    .header{
+        background-color: orange;
+        
+        &__nav{
+            width: 100%;
+            // height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            .fa-user{
+                color: blue;
+            }
+        }
+        &__togl{
+            display: none;
+        }
+        
+
+        &__lists{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            flex-direction: row;
+            background-color: transparent;
+            border-top: none;
+            border-bottom: none;
+        }
+        &__link{
+            font-size: 14px;
+        }
+        &__items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+}
