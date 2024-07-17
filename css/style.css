@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 .header__logo {
-  width: 50%;
+  width: 300px;
   cursor: pointer;
 }
 .header__lists {
@@ -521,6 +521,217 @@
     margin-right: auto;
   }
 }
+.works {
+  width: 100%;
+  margin-top: 100px;
+}
+.works__items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.works__title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #83888F;
+}
+.works__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+.works__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.works__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.works__card-title {
+  font-size: 22px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.works__card-list {
+  font-size: 14px;
+  text-align: center;
+}
+.works__btn {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background-color: #0E8784;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-family: --font-family;
+}
+
+@media (min-width: 768px) {
+  .works__items {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .works__title {
+    font-size: 36px;
+  }
+  .works__line {
+    width: 75%;
+    height: 2px;
+    background-color: #fdd6ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .works__round {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #0e8784;
+    justify-content: space-between;
+  }
+  .works .round1 {
+    position: absolute;
+    right: 0;
+  }
+  .works .round3 {
+    position: absolute;
+    left: 0;
+  }
+  .works__cards {
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .works__card {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .works__text {
+    display: flex;
+    align-items: flex-start;
+  }
+  .works__card-title {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 80%;
+    white-space: collapse;
+  }
+  .works__card-list {
+    text-align: start;
+    width: 70%;
+  }
+  .works__image {
+    width: 100%;
+  }
+  .works__image img {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .works__title {
+    font-size: 48px;
+  }
+  .works__card-title {
+    font-size: 30px;
+  }
+  .works__card-list {
+    width: 80%;
+    font-size: 20px;
+  }
+  .works__btn {
+    width: 20%;
+    padding: 2%;
+    font-size: 24px;
+  }
+}
+.footer__items {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  background-color: #2C343E;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer__link {
+  color: #979797;
+  font-weight: 600;
+}
+.footer__link:hover {
+  color: white;
+}
+.footer__app {
+  display: flex;
+  gap: 20px;
+}
+.footer__app-link {
+  font-size: 22px;
+  color: white;
+}
+.footer .fa-facebook:hover {
+  color: blue;
+}
+.footer .fa-twitter:hover {
+  color: #1DA1F2;
+}
+.footer .fa-instagram:hover {
+  color: blueviolet;
+}
+
+@media (min-width: 768px) {
+  .footer__items {
+    padding-top: 80px;
+    height: 40vh;
+  }
+  .footer__list {
+    flex-direction: row;
+  }
+  .footer__app-link {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: 10%;
+  }
+  .footer__items {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+  }
+  .footer__image {
+    width: 30%;
+  }
+  .footer__image img {
+    width: 100%;
+  }
+  .footer__link {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -576,4 +787,10 @@ button:hover {
   --c5-c: #7cd0d3;
   --c5-d: #b9e6e8;
   --c5-e: #ecf6f6;
+}
+
+:root {
+  --font-family: "Fraunces 9pt", sans-serif;
+  --second-family: "Barlow", sans-serif;
+  --third-family: "Fraunces", sans-serif;
 }
