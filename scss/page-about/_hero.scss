@@ -1,0 +1,76 @@
+.heroAbout{
+    width: 100%;
+    padding-top: 50px;
+    &__container{
+        width: 100%;
+        height: 350px;
+        background-image: url("../../image/Group\ 7.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+    }
+    &__list{
+        font-size: 16px;
+        line-height: 25px;
+        color: rgb(187, 185, 185);
+    }
+}
+
+@media (min-width: 768px){
+    .heroAbout{
+
+        &__container{
+            background-color: orange;
+            width: 100%;
+            height: 350px;
+            align-items: start;
+            text-align: start;
+            padding: 50px;
+            background-size: auto;
+        }
+
+        &__title{
+            font-size: 36px;
+            font-weight: 900;
+        }
+        &__list{
+            width: 80%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .heroAbout{
+
+        &__container{
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+           
+        }
+
+        &__title{
+            font-size: 56px;
+        }
+
+        &__list{
+            width: 47%;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
